@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+p {
+  margin: 0;
+}
+
+p::before {
+  content: "hello";
+  background: red;
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+}
+
+p::after {
+  content: "goodbye";
+  background: red;
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+}
