@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Unica+One|Vollkorn");
 body {
   font-size: 1rem;
@@ -63,27 +62,27 @@ a[data-tool-tip]::after {
 
 a[data-tool-tip]:hover::after {
   transform: scale(1);
-  bottom: 100%; }
+  bottom: 0; }
 
 .decorations {
   padding: 7em; }
 
+.section-with-deco {
+  margin: 0; }
+
 .section-with-deco::before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: '\f0e7';
-  display: block;
-  margin-bottom: 5px; }
+  content: url(../src/lightning.png);
+  display: block; }
 
 a[href$=".pdf"]::after {
   font-family: 'Font Awesome 5 Free';
-  content: " "; }
+  content: url(../src/pdf-file-format-symbol.png); }
 
 a[href^="http"]::after {
   font-family: 'Font Awesome 5 Free';
-  content: ' \f35d';
-  font-weight: 900;
-  font-size: .8em; }
+  content: url(../src/external-link-symbol.png); }
 
 .counters {
   background: lightgray;
@@ -100,7 +99,7 @@ a[href^="http"]::after {
   content: counter(counter-name);
   position: absolute;
   left: -2.5em;
-  top: -.5em;
+  top: 0;
   background: white;
   width: 2em;
   height: 2em;
